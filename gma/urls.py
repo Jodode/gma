@@ -23,4 +23,4 @@ urlpatterns = [
     path('', include('futbik.urls'))
 ]
 
-urlpatterns += staticfiles_urlpatterns
+urlpatterns += staticfiles_urlpatterns()
