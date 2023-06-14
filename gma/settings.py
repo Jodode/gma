@@ -110,7 +110,7 @@ WSGI_APPLICATION = 'gma.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.parse(
-        "postgres://Jodode:haY80XPHbSMQ@ep-young-firefly-194251.eu-central-1.aws.neon.tech/futbik?options=endpoint%3Dbr-steep-base-103070",
+        "postgres://Jodode:haY80XPHbSMQ@ep-young-firefly-194251.eu-central-1.aws.neon.tech/futbik?options=endpoint%3Dep-young-firefly-194251",
         conn_max_age=600,
         conn_health_checks=True,
     ),
