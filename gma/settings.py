@@ -104,7 +104,7 @@ DATABASES = {
     'PASSWORD': 'haY80XPHbSMQ',
     'HOST': 'ep-young-firefly-194251.eu-central-1.aws.neon.tech',
     'PORT': '5432',
-    'OPTIONS': {'sslmode': 'disable'},
+    'OPTIONS': {'sslmode': 'require'},
   }
 }
 
