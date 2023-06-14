@@ -2,7 +2,7 @@ meta:
   environment: python
   toolchain:
     name: pip
-    version: 3.9
+    version: 3.9.10
 
 run:
   command: gunicorn --bind 0.0.0.0:5000 gma.wsgi
