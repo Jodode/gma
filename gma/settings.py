@@ -96,25 +96,24 @@ TEMPLATES = [
 WSGI_APPLICATION = 'gma.wsgi.application'
 
 
-# DATABASES = {
-#   'default': {
-#     'ENGINE': 'django.db.backends.postgresql',
-#     'NAME': 'futbik',
-#     'USER': 'Jodode',
-#     'PASSWORD': 'haY80XPHbSMQ',
-#     'HOST': 'ep-young-firefly-194251.eu-central-1.aws.neon.tech',
-#     'PORT': '5432',
-#     'OPTIONS': {"endpoint": "br-steep-base-103070"},
-#   }
-# }
-
 DATABASES = {
-    'default': dj_database_url.parse(
-        "postgres://Jodode:haY80XPHbSMQ@ep-young-firefly-194251.eu-central-1.aws.neon.tech/futbik?options=endpoint%3Dep-young-firefly-194251",
-        conn_max_age=600,
-        conn_health_checks=True,
-    ),
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'futbik',
+    'USER': 'Jodode',
+    'PASSWORD': 'haY80XPHbSMQ',
+    'HOST': 'ep-young-firefly-194251.eu-central-1.aws.neon.tech',
+    'PORT': '5432',
+  }
 }
+
+# DATABASES = {
+#     'default': dj_database_url.parse(
+#         "postgres://Jodode:haY80XPHbSMQ@ep-young-firefly-194251.eu-central-1.aws.neon.tech/futbik?options=endpoint%3Dep-young-firefly-194251",
+#         conn_max_age=600,
+#         conn_health_checks=True,
+#     ),
+# }
 
 # DATABASES = {
 #     'default': {
